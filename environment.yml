@@ -1,0 +1,10 @@
+channels:
+  - defaults
+dependencies:
+  - python=2.7.17=h9bab390_0
+  - cmake=3.16.3=h28c56e5_0
+  - gmock=1.8.1=1004
+  - gtest=1.8.1=h6bb024c_1004
+  - protobuf=3.11.3=py27he1b5a44_0    
+  - pybind11=2.4.3=py27hc9558a2_0
+  - zmqpp=4.2.0=h667716f_0

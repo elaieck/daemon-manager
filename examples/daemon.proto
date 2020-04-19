@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package test_daemon;
+
+message DaemonRequest {
+    oneof cmd { 
+        int32 num = 1;
+        string str = 2;
+        bool choice = 3;
+
+    }
+}
+
+message DaemonResponse {
+    oneof cmd { 
+        int32 num = 1;
+        string str = 2;
+        bool choice = 3;
+    }
+}

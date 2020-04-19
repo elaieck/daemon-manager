@@ -1,0 +1,30 @@
+package:
+  name: daemon-manager
+  version: 0.1.0
+
+source:
+  path: ../
+
+requirements:
+  build:
+    - make
+    - cmake
+  host:
+    - pybind11
+    - zmqpp
+  run:
+    - zmqpp
+
+test:
+  commands:
+    - test -f ${PREFIX}/include/daemon_manager/daemon_server.hpp
+    - test -f ${PREFIX}/include/daemon_manager/daemon_client.hpp
+    - test -f ${PREFIX}/lib/python2.7/site-packages/pydaemon.so
+
+about:
+  home: http://gitler/el/daemon-manager
+  summary: "Base daemon implementation"
+  description: |
+    This module implements the api for a daemon, complete with statistic and parameters
+    tree, external api for commands and eventloop.
+  dev_url: http://gitler/el/daemon-manager
